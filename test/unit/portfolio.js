@@ -30,4 +30,18 @@
        expect(tech.stocks[1].count).to.equal(30);
      });
       });
+   describe('#del', function(){
+     it('Should delete stocks', function(){
+       var tech = new Portfolio('tech');
+       tech.add('appl',50);
+       tech.add('msft',35);
+        
+       tech.del('appl',10);
+       tech.del('appl',20);
+       tech.del('msft',40);
+
+       expect(tech.stocks).to.have.length(1);
+       expect(tech.stocks[0].count).to.equal(20);
+     });
+      });
  });
