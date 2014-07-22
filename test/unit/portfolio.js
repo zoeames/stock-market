@@ -4,7 +4,7 @@
 
  var expect = require('chai').expect;
  var Portfolio = require('../../app/models/portfolio.js');
- var Stock = require('../../app/models/stock');
+ var Stock = require('../../app/models/stock.js');
 
  describe('Portfolio', function(){
    describe('constructor', function(){
